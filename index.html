@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="contianer">
+            <div class="logo"data-aos="zoom-in"data-aos-duration="1000">
+                <span>Eng.Omar</span>
+            </div>
+            <ul class="links">
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="100"><a href="#home" onclick="location.reload()">Home</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300"><a href="services.html">Services</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="400"><a href="skills.html">Skills </a></div>
+                <div class="link content-btn"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="500"><a href="contact.html">Contact Us</a></div>
+            </ul>  
+            <i class="fa-solid fa-bars humburg" onclick="humburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href=""onclick="location.reload()">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>    
+    <section>
+        <div class="main-container">
+            <div class="image"data-aos="zoom-in-right"data-aos-duration="2500">
+                <img src="img.jpg" >
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left"data-aos-duration="1000"data-aos-delay="800">I'm <span>Omar Mahmoud</span></h1>
+                <div class="typewriter"data-aos="fade-right"data-aos-duration="1000"data-aos-delay="900">I'm a <span></span></div>
+                <p data-aos="flip-up"data-aos-duration="1000"data-aos-delay="1000">with a solid foundation in web development technologies. I specialize in creating responsive, user-friendly interfaces using HTML, CSS, JavaScript, and I’m currently diving deeper into React.js to build dynamic single-page </p>
+                <div class="social-links" data-aos="zoom-out"data-aos-duration="1000"data-aos-delay="1100">
+                    <a target="_blank" href="https://www.linkedin.com/in/omar-m3hmoud/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/omarm3hmoud"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/omar_m3hmoud/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn"data-aos="zoom-out"data-aos-duration="1000"data-aos-delay="1300">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function humburg() {
+            const navbar = document.querySelector(".dropdown");
+            const cancelBtn = document.querySelector(".cancel");
+            const humburgBtn = document.querySelector(".humburg");
+            navbar.style.transform = "translateY(0px)";
+            cancelBtn.style.display = "block";
+            humburgBtn.style.display = "none";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            const cancelBtn = document.querySelector(".cancel");
+            const humburgBtn = document.querySelector(".humburg");
+            navbar.style.transform = "translateY(-500px)";
+            cancelBtn.style.display = "none";
+            humburgBtn.style.display = "block";
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          offset: 0, 
+          duration: 1000
+        });
+    </script>
+</body> 
+</html>

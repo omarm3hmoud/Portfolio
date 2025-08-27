@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <title>About</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Navigation -->
+  
+  <nav>
+        <div class="contianerr">
+            <div class="logo"data-aos="zoom-in"data-aos-duration="1000">
+                <span>Eng.Omar</span>
+            </div>
+            <ul class="links">
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="100"><a href="index.html" >Home</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200"><a href="about.html"onclick="location.reload()">About</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300"><a href="services.html">Services</a></div>
+                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="400"><a href="skills.html">Skills </a></div>
+                <div class="link content-btn"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="500"><a href="contact.html">Contact Us</a></div>
+            </ul>  
+            <i class="fa-solid fa-bars humburg" onclick="humburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html"onclick="location.reload()">About</a>
+                <a href="services.html">Services</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>    
+
+  <!-- About Section -->
+  <section class="about">
+    
+    <div class="container">
+      <h1 data-aos="zoom-in-right"data-aos-duration="1000"data-aos-delay="100">About Me</h1>
+      <p data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200">
+        Hello! My name is <strong>Omar Mahmoud</strong>, a 19-year-old student at the 
+        <strong>Faculty of Computers and Information, Mansoura University</strong>.  
+        In addition to my academic studies, I work as a <strong>freelancer</strong> specializing in 
+        <strong>Front-End Development</strong>.
+      </p>
+      <p data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300">
+        I have a solid understanding of modern web technologies including HTML5, CSS3, JavaScript, and 
+        frameworks like React.js. I enjoy creating responsive, user-friendly, and visually appealing 
+        web interfaces.  
+      </p>
+      <p data-aos="fade-up"data-aos-duration="1000"data-aos-delay="400">
+        When I'm not coding, I love exploring new technologies, learning about UI/UX design principles,
+        I also have some projects available on my <a href="https://github.com/your-github" target="_blank">GitHub</a>, 
+        showcasing my skills and continuous learning journey.
+      </p>
+    </div>
+  </section>
+   <script>
+        function humburg() {
+            const navbar = document.querySelector(".dropdown");
+            const cancelBtn = document.querySelector(".cancel");
+            const humburgBtn = document.querySelector(".humburg");
+            navbar.style.transform = "translateY(0px)";
+            cancelBtn.style.display = "block";
+            humburgBtn.style.display = "none";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            const cancelBtn = document.querySelector(".cancel");
+            const humburgBtn = document.querySelector(".humburg");
+            navbar.style.transform = "translateY(-500px)";
+            cancelBtn.style.display = "none";
+            humburgBtn.style.display = "block";
+        }
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          offset: 0, 
+          duration: 1000
+        });
+    </script>
+</body>
+</html>
