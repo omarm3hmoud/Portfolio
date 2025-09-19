@@ -9,35 +9,48 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="contianer">
             <div class="logo"data-aos="zoom-in"data-aos-duration="1000">
                 <span>Eng.Omar</span>
             </div>
-            <ul class="links">
-                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="100"><a href="#home" onclick="location.reload()">Home</a></div>
-                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="200"><a href="about.html">About</a></div>
-                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="300"><a href="services.html">Services</a></div>
-                <div class="link"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="400"><a href="skills.html">Skills </a></div>
-                <div class="link content-btn"data-aos="fade-up"data-aos-duration="1000"data-aos-delay="500"><a href="contact.html">Contact Us</a></div>
-            </ul>  
+           <ul class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <a href="#about">About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="#services">Services</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <a href="#skills">Skills</a>
+                </div>
+                <div class="link content-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </ul>
+
             <i class="fa-solid fa-bars humburg" onclick="humburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href=""onclick="location.reload()">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="skills.html">Skills</a>
-                <a href="contact.html">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
+
     </nav>    
-    <section>
+
+    <section class="home" id="home"> >
         <div class="main-container">
             <div class="image"data-aos="zoom-in-right"data-aos-duration="2500">
-                <img src="img.jpg" >
+                <img src="IMG-20250901-WA0122.jpg" >
             </div>
             <div class="content">
                 <h1 data-aos="fade-left"data-aos-duration="1000"data-aos-delay="800">I'm <span>Omar Mahmoud</span></h1>
@@ -48,12 +61,199 @@
                     <a target="_blank" href="https://github.com/omarm3hmoud"><i class="fa-brands fa-github"></i></a>
                     <a target="_blank" href="https://www.instagram.com/omar_m3hmoud/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <div class="btn"data-aos="zoom-out"data-aos-duration="1000"data-aos-delay="1300">
+                <div class="btn">
                     <button>Download CV</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="about-container" id="about">
+        <div class="about">
+            <h1 >About Me</h1>
+            <p >
+                Hello! My name is <strong>Omar Mahmoud</strong>, a 19-year-old student at the 
+                <strong>Faculty of Computers and Information, Mansoura University</strong>.  
+                In addition to my academic studies, I work as a <strong>freelancer</strong> specializing in 
+                <strong>Front-End Development</strong>.
+            </p>
+            <p >
+                I have a solid understanding of modern web technologies including HTML5, CSS3, JavaScript, and 
+                frameworks like React.js. I enjoy creating responsive, user-friendly, and visually appealing 
+                web interfaces.  
+            </p>
+            <p >
+                When I'm not coding, I love exploring new technologies, learning about UI/UX design principles,
+                I also have some projects available on my <a href="https://github.com/your-github" target="_blank">GitHub</a>, 
+                showcasing my skills and continuous learning journey.
+            </p>
+        </div>
+  </section>
+
+   <section class="services-container" id="services">
+        <nav class="h1">
+            <h1>My Services</h1>
+            <h2 >Full Package to build modern, responsive, and user-friendly web interfaces.</h2>
+        </nav>
+        <div class="services">
+            <div class="service" >
+            <h2>1. Responsive Web Page Development</h2>
+            <p>- Clean and semantic HTML5<br>- Modern CSS3 styling<br>- Interactive functionality with JavaScript</p>
+            </div>
+
+            <div class="service">
+            <h2>2. PSD / Figma / XD to HTML Conversion</h2>
+            <p>- Pixel-perfect implementation<br>- Fully responsive across all devices</p>
+            </div>
+
+            <div class="service" >
+            <h2>3. Modern Front-End Frameworks</h2>
+            <p>- Dynamic UI with React.js (Vue/Angular if applicable)<br>- State management with Redux or Context API</p>
+            </div>
+
+            <div class="service">
+            <h2>4. API Integration</h2>
+            <p>- Fetch & display data using REST APIs<br>- Axios or Fetch for smooth integration</p>
+            </div>
+
+            <div class="service">
+            <h2>5. User Experience (UX) Enhancements</h2>
+            <p>- Intuitive layout<br>- Smooth navigation and usability</p>
+            </div>
+
+            <div class="service" >
+            <h2>6. Admin Dashboards / Panels</h2>
+            <p>- Functional and stylish control panels for web apps</p>
+            </div>
+
+            <div class="service">
+            <h2>7. Animations & Visual Effects</h2>
+            <p>- CSS/JS-based transitions and animations to enhance UI</p>
+            </div>
+
+            <div class="service">
+            <h2>8. SEO-Friendly Front-End</h2>
+            <p>- Proper structure and accessibility for search engine indexing</p>
+            </div>
+
+            <div class="service" >
+            <h2>9. Deployment & Hosting</h2>
+            <p>- Hosting via GitHub Pages, Netlify, or Vercel<br>- Domain connection setup</p>
+            </div>
+
+            <div class="service" >
+            <h2>10. Clean, Maintainable Code</h2>
+            <p>- Component-based structure<br>- Easy to scale and manage</p>
+            </div>
+
+            <div class="service">
+            <h2>11. Version Control with Git & GitHub</h2>
+            <p>- Code backup, collaboration, and version management</p>
+            </div>
+        </div>    
+   </section>
+
+   <section class="my-works-container" id="works">
+        <div class="line">
+            <h1 >My Works</h1>
+            <p >Here are some of the projects I've worked on, showcasing my skills in front-end development and design.</p>
+        </div>
+        <div class="my-works-grid ">
+            <div class="my-work-card">
+                <a href="https://to-do-list-react-app-route.netlify.app/" target="_blank"><img src="Screenshot 2025-09-19 205828.png" alt=""><h2>TO Do List</h2></a>
+            </div>  
+            <div class="my-work-card">
+                <a href="https://omarm3hmoud.github.io/AVATAR2/" target="_blank"><img src="Screenshot 2025-09-19 210708.png" alt=""><h2>Avatar 2</h2></a>
+            </div> 
+            <div class="my-work-card">
+                <a href="https://e-commerce-react-app-omar.netlify.app/" target="_blank"><img src="Screenshot 2025-09-19 211205.png" alt=""><h2>E-Commerce </h2></a>
+            </div> 
+            <div class="my-work-card">
+                <a href="https://omarm3hmoud.github.io/PASMAH/" target="_blank"><img src="Screenshot 2025-09-19 211346.png" alt=""><h2>PASMAH</h2></a>
+            </div> 
+            <div class="my-work-card">
+                <a href="https://omarm3hmoud.github.io/Menu/" target="_blank"><img src="Screenshot 2025-09-19 211859.png" alt=""><h2>Menu Drinks</Menu></h2></a>
+            </div> 
+            <div class="my-work-card">
+                <a href="https://omarm3hmoud.github.io/Landing-Page/" target="_blank"><img src="Screenshot 2025-09-19 212425.png" alt=""><h2>Landing Page</h2></a>
+            </div> 
+        </div>
+   </section>
+    
+
+   <section class="skills-container" id="skills">
+      <h1 >My Skills</h1>
+      <p >
+        Here are the technical skills I have developed during my academic studies and freelance work.  
+        These skills cover <strong>Front-End Development</strong>, <strong>Computer Science</strong> concepts, and additional creative abilities.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card" >
+          <h2>Front-End Development</h2>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>React.js, Redux</li>
+            <li>API Integration</li>
+            <li>UI/UX Enhancements</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h2>Computer Science</h2>
+          <ul>
+            <li>Data Structures</li>
+            <li>Database Management</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h2>Other Skills</h2>
+          <ul>
+            <li>Version Control (Git & GitHub)</li>
+            <li>Video Editing</li>
+            <li>SEO-Friendly Development</li>
+            <li>Deployment & Hosting</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <section class="contact-container" id="contact">
+      <h1>Contact Me</h1>
+      <p >If you’d like to get in touch with me for collaborations, projects, or any inquiries, feel free to reach out through the following channels:</p>
+
+      <div class="contact-info">
+        <div class="contact-card whatsapp">
+           <h2><i class="fab fa-whatsapp"></i> WhatsApp</h2>
+           <p><a href="https://wa.me/201016407214" target="_blank">Chat on WhatsApp</a></p>
+        </div>
+
+        <div class="contact-card email" >
+          <h2><i class="fas fa-envelope"></i> Email</h2>
+          <p><a href="mailto:omarm3hmoud@gmail.com">omarm3hmoud@gmail.com</a></p>
+        </div>
+
+      </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         function humburg() {
             const navbar = document.querySelector(".dropdown");
