@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omar Mahmoud - Software Engineer | Frontend Developer | UI/UX Designer">
+    <title>Omar Mahmoud | Software Engineer</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans for a clean, modern, premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Omar <span class="text-accent">Mahmoud</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Theme change button -->
+                <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HERO ====================-->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__image-wrapper fade-in flex-center">
+                    <!-- The user will need to place profile.jpg in assets/images/ -->
+                    <img src="assets/images/profile.jpg" alt="Omar Mahmoud" class="hero__img">
+                </div>
+
+                <div class="hero__data fade-in">
+                    <h1 class="hero__title">
+                        Hi, I'm <br>
+                        <span class="text-accent">Omar Mahmoud</span>
+                    </h1>
+                    <h3 class="hero__subtitle">Software Engineer | Frontend Developer | UI/UX Designer</h3>
+                    <p class="hero__description">
+                        I craft premium, high-performance web experiences. Focused on product building, intuitive design, and scalable frontend architectures.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="button">View Work</a>
+                        <a href="Omar_Mahmoud_Frontend_Developer_CV.pdf" class="button button--ghost" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section__title fade-in">About Me</h2>
+            <span class="section__subtitle fade-in">My Professional Journey</span>
+
+            <div class="about__container container
+            ">
+                <div class="about__data fade-in">
+                    <p class="about__description">
+                        I'm a highly motivated Software Engineer and a student at the Faculty of Computers and Information, Mansoura University. My true passion lies in bridging the gap between design and engineering.
+                    </p>
+                    <p class="about__description">
+                        I don't just write code; I build products. With a strong consciousness for UI/UX principles and an obsession with clean code, I specialize in architecting responsive, accessible, and fast web applications. My freelance background has equipped me with a product-focused mindset, ensuring that every pixel serves a purpose and every line of code adds value.
+                    </p>
+                    
+                    <div class="about__info">
+                        <div class="about__info-box">
+                            <i class="fa-solid fa-code about__info-icon text-accent"></i>
+                            <h3 class="about__info-title">Frontend Specialist</h3>
+                            <span class="about__info-subtitle">React.js & Next.js</span>
+                        </div>
+                        <div class="about__info-box">
+                            <i class="fa-solid fa-pen-nib about__info-icon text-accent"></i>
+                            <h3 class="about__info-title">UI/UX Conscious</h3>
+                            <span class="about__info-subtitle">Pixel-perfect Implementation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title fade-in">Technical Arsenal</h2>
+            <span class="section__subtitle fade-in">Technologies & Tools</span>
+
+            <div class="skills__container container grid">
+                
+                <div class="skills__content fade-in">
+                    <h3 class="skills__title">
+                        <i class="fa-solid fa-laptop-code skills__icon"></i> Frontend Core & Frameworks
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">JavaScript (ES6+)</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">TypeScript</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">React.js</h3></div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">HTML5 / CSS3</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Next.js</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Redux / Context API</h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content fade-in">
+                    <h3 class="skills__title">
+                        <i class="fa-solid fa-toolbox skills__icon"></i> Tools, Design & CS
+                    </h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Git & GitHub</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">API Integration</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Figma/XD to HTML</h3></div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Data Structures</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">SEO Optimization</h3></div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <div><h3 class="skills__name">Responsive Design</h3></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title fade-in">Featured Projects</h2>
+            <span class="section__subtitle fade-in">My Recent Work</span>
+
+            <div class="projects__container container grid">
+                <!-- Project 1 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <!-- Placeholder for screenshot, optional -->
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">E-Commerce Application</h3>
+                        <p class="projects__description">
+                            A modern, fully functional e-commerce platform ensuring a frictionless shopping experience. Integrated with dynamic routing and state management.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>React.js</li>
+                            <li>Context API</li>
+                            <li>CSS3</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://e-commerce-react-app-omar.netlify.app" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-stethoscope"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Doctor Clinic Portal</h3>
+                        <p class="projects__description">
+                            A comprehensive clinic management portal designed to streamline patient appointments and clinic services with an intuitive UI.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>React.js</li>
+                            <li>Bootstrap</li>
+                            <li>API Integration</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://doctor-clinic-app.netlify.app" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-list-check"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Advanced To-Do List</h3>
+                        <p class="projects__description">
+                            A highly interactive productivity tool. Features complex state handling for task categorization, completion tracking, and persistent storage.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>React.js</li>
+                            <li>CSS Modules</li>
+                            <li>LocalStorage</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://to-do-list-react-app-route.netlify.app" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-table-columns"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Dashboard</h3>
+                        <p class="projects__description">
+                           Manage your engineering projects and teams with our intuitive CRM dashboard.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Framer Motion</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://ocean-next.netlify.app/" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-clapperboard"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Avatar 2</h3>
+                        <p class="projects__description">
+                           is a science fiction movie franchise The story takes place on Pandora, a lush, habitable moon in the Alpha Centauri star system.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://omarm3hmoud.github.io/AVATAR2/" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="projects__card fade-in">
+                    <div class="projects__image-wrapper">
+                        <div class="projects__image-placeholder"><i class="fa-solid fa-coffee"></i></div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Espresso Cafe</h3>
+                        <p class="projects__description">
+                            A highly interactive productivity tool. Features complex state handling for task categorization, completion tracking, and persistent storage.
+                        </p>
+                        <ul class="projects__tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://espresso-cafe-m.netlify.app/" target="_blank" class="projects__link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== VIDEO WALKTHROUGHS ====================-->
+        <section class="video section">
+            <h2 class="section__title fade-in">Project Walkthroughs</h2>
+            <span class="section__subtitle fade-in">See my projects in action</span>
+
+            <div class="video__container container grid">
+                <div class="video__card fade-in">
+                    <div class="video__embed-wrapper">
+                        <!-- Replace with real iframe when available -->
+                        <div class="video__placeholder">
+                            <a href="https://www.linkedin.com/posts/omar-m3hmoud_php-webdevelopment-phpproject-activity-7405320196745330688-tzUN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTTEf8BQ8aCEkRaX-FwkNf39I8BKfDs8_Q" target="_blank">
+                                <i class="fa-brands fa-linkedin-in video__icon"></i>
+                                <p>Espresso Cafe<br></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video__card fade-in">
+                    <div class="video__embed-wrapper">
+                        <div class="video__placeholder">
+                            <a href="https://www.linkedin.com/posts/omar-m3hmoud_webdevelopment-frontenddevelopment-reactjs-activity-7379999280004247552-9yMB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFTTEf8BQ8aCEkRaX-FwkNf39I8BKfDs8_Q" target="_blank">
+                                <i class="fa-brands fa-linkedin-in video__icon"></i>
+                                <p>Doctor Clinic Walkthrough<br></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== EDUCATION & EXPERIENCE ====================-->
+        <section class="experience section" id="experience">
+            <h2 class="section__title fade-in">Journey</h2>
+            <span class="section__subtitle fade-in">Education & Freelancing</span>
+
+            <div class="experience__container container">
+                <div class="experience__timeline">
+                    
+                    <div class="timeline__item fade-in">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Present</span>
+                            <h3 class="timeline__title">Freelance Frontend Developer</h3>
+                            <span class="timeline__subtitle">Self-Employed</span>
+                            <p class="timeline__text">Delivering premium web applications and converting high-fidelity Figma/XD designs into pixel-perfect, responsive HTML/React codebse for international clients.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item fade-in">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Expected 2026</span>
+                            <h3 class="timeline__title">BSc. Computers and Information</h3>
+                            <span class="timeline__subtitle">Mansoura University</span>
+                            <p class="timeline__text">Studying core computer science concepts, data structures, algorithms, and software engineering principles while building a strong foundation in modern web technologies.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title fade-in">Get In Touch</h2>
+            <span class="section__subtitle fade-in">Let's build something amazing</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__content fade-in">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fa-regular fa-envelope contact__card-icon text-accent"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">omarm3hmoud@gmail.com</span>
+                            <a href="mailto:omarm3hmoud@gmail.com" class="contact__button">Write me <i class="fa-solid fa-arrow-right contact__button-icon"></i></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fa-brands fa-whatsapp contact__card-icon text-accent"></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+20 (10) 1640-7214</span>
+                            <a href="https://wa.me/201016407214" target="_blank" class="contact__button">Chat now <i class="fa-solid fa-arrow-right contact__button-icon"></i></a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fa-brands fa-github contact__card-icon text-accent"></i>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">@omarm3hmoud</span>
+                            <a href="https://github.com/omarm3hmoud" target="_blank" class="contact__button">View profile <i class="fa-solid fa-arrow-right contact__button-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content fade-in">
+                    <form action="" class="contact__form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Insert your name" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Insert your email" class="contact__form-input">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your project details" class="contact__form-input"></textarea>
+                        </div>
+                        <button class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Omar Mahmoud</h1>
+            <ul class="footer__list">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+            </ul>
+            <ul class="footer__social">
+                <a href="https://github.com/omarm3hmoud" target="_blank" class="footer__social-link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/omar-m3hmoud" target="_blank" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/omar.m3hmoud" target="_blank" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/omar_m3hmoud" target="_blank" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+            </ul>
+            <span class="footer__copy">&#169; 2026 Omar Mahmoud. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="js/script.js"></script>
+</body>
+</html>
